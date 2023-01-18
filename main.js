@@ -90,6 +90,21 @@ function card(data) {
 }
 card(data);
 
-document.getElementById("backToTop").addEventListener("click", function () {
+let mybutton = document.getElementById("backToTop");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+mybutton.addEventListener("click", function () {
   console.log("Back to Top");
+  document.documentElement.scrollTop = 0;
 });
