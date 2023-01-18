@@ -1,0 +1,71 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    height:30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.navbar>div>div{
+    font-size:25px;
+}
+.navbar-1{
+    /* flex:1; */
+    width:30%;
+}
+.navbar-2{
+    display: flex;
+    justify-content: space-around;
+    /* flex:3 */
+    width:70%;
+}
+.title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(92,94,191);
+    min-height: 20vh;
+}
+.button{
+    font-size:25px;
+    padding:10px;
+    background-color:#fff;
+    border-radius:1px solid;
+    margin-bottom:10px;
+}
+.classes{
+    display:flex;
+    flex-direction:column;
+   background-color: rgb(248,249,250);
+   min-height:20vh;
+}
+#cardD{
+    display: grid;
+    margin:10px;
+    grid-template-columns:250px 250px 250px;
+    /* grid-template-rows: minmax(8,auto); */
+    margin-left:20%;
+    margin-right: 20%;
+    justify-content: space-between;
+
+
+}
+.Eachcard{
+    /* border:6px solid red; */
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#backToTop{
+    position:fixed;
+    right:350px;
+    bottom:15px;
+    border:5px solid ;
+    padding:5px;
+    margin:3px;
+    cursor:pointer;
+}
